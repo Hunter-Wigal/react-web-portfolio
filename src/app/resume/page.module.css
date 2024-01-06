@@ -1,0 +1,12 @@
+.resume {
+    display: block;
+    position: relative;
+    width: 50%;
+    margin-inline: auto;
+    border: 1px solid black;
+    margin-bottom: 5rem;
+}
+
+.header{
+    text-align: center;
+}

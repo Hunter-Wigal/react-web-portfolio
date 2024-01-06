@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    padding-inline: 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 10%;
+    height: 20%;
+    background-color: gray;
+    margin: 1.5%;
+    border-radius: 15px;
+}

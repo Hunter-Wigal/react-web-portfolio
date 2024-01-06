@@ -1,94 +1,37 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+    <main className="main">
+      <div className={styles.intro}>
+        <h1>General Description Section</h1>
+        <p>Basic info on the site</p>
+        <p>Hi, I'm Hunter. I'm currently a student at WVU, graduating in May of 2024, and am
+          pursuing a Bachelor of Science in Computer Science. I am looking to obtain work in the field of
+          software engineering, specifically related to web development.
+          This website contains relevant information
+          such as:
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+        <ul>
+          <li>Projects I have worked on</li>
+          <li>Skills / Experience</li>
+          <li>Contact information</li>
+          <li>And a copy of my resume</li>
+        </ul>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <p>
+          Some examples of projects I've worked on include <a href="https://sophiessweetswv.com/">SophiesSweets</a>
+          , <a href="https://logique-a-la-crabe.firebaseapp.com/">Logique-a-la-Crabe</a>
+        </p>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <p>This website was built using React with the Next.js framework and deployed using AWS Amplify.
+        </p>
+        <p>Possibly pictures</p>
+        <ul>
+          <li>Examples of work</li>
+          <li>What I have experience with?</li>
+        </ul>
       </div>
     </main>
   )
