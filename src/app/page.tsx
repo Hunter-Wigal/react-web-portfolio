@@ -21,8 +21,8 @@ export default function Page() {
         </ul>
 
         <p>
-          Some examples of projects I've worked on include <a href="https://sophiessweetswv.com/">SophiesSweets</a>
-          , <a href="https://logique-a-la-crabe.firebaseapp.com/">Logique-a-la-Crabe</a>
+          Some examples of projects I've worked on include <a href="https://sophiessweetswv.com/" target="_blank">SophiesSweets</a>
+          , <a href="https://logique-a-la-crabe.firebaseapp.com/" target="_blank">Logique-a-la-Crabe</a>
         </p>
 
         <p>This website was built using React with the Next.js framework and deployed using AWS Amplify.

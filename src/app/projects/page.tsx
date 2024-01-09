@@ -6,7 +6,8 @@ const projectsList = [
         name: "Sophie's Sweets",
         description: `A business website made for displaying bakes goods
         and for provided customers a way to order.`,
-        repo_link: "#"
+        repo_link: "#",
+        image: "/projects/sophies_sweets.png"
     },
     {
         name: "MPX Based Operating System(check)",
@@ -48,7 +49,8 @@ export default function Projects(props: {}){
         <div className={styles.container}>
 
             {projectsList.map(function(project){
-                return <Card key={project.name} name={project.name} description={project.description} repo_link={project.repo_link}></Card>
+                let img = project.image ? project.image : "nonexistent";
+                return <Card key={project.name} name={project.name} description={project.description} repo_link={project.repo_link} image={img}></Card>
             })}
             
 
