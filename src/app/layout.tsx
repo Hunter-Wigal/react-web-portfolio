@@ -8,7 +8,7 @@ import Footer from './footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Web Portfolio',
+  title: 'Hunter Wigal Portfolio',
   description: 'Projects and information about Hunter Wigal',
   icons: '/favicon.ico'
 }

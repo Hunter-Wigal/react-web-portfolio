@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <main className="main">
       <div className={styles.intro}>
-        <h1>General Description Section</h1>
+        <h1 className="title">General Description Section</h1>
         <p>Basic info on the site</p>
         <p>Hi, I'm Hunter. I'm currently a student at WVU, graduating in May of 2024, and am
           pursuing a Bachelor of Science in Computer Science. I am looking to obtain work in the field of

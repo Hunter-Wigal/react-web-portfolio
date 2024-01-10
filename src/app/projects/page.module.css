@@ -4,12 +4,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .card{
     width:auto;
     max-width: 25%;
-    min-width: 220px;
+    min-width: 280px;
     height: auto;
     background-color: gray;
     margin: 1.5%;
