@@ -4,29 +4,34 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: left;
 }
 
 .card{
     width:auto;
     max-width: 25%;
     min-width: 280px;
-    height: auto;
-    background-color: gray;
+    max-height: 500px;
+    background-color: rgba(76, 80, 81, 0.347);
     margin: 1.5%;
     border-radius: 15px;
     padding: 1%;
+    box-shadow: 15px 15px 10px; 
+    overflow-y: hidden;
+    position: relative;
 }
 
 .card h1{
     text-align: center;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 717px) {
     .card {
-      max-width: 60%;
+      max-width: 75%;
       margin: auto;
       padding: 3%;
+      margin-bottom: 10%;
+      max-height: 450px;
     }
   }
 
@@ -38,6 +43,7 @@
     background-color: black;
     display: block;
     margin-inline: auto;
+    border-radius: 10px;
 }
 
 .image{
@@ -45,4 +51,45 @@
     margin-inline: auto;
     width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+.expand_btn{
+    font-size: 18px;
+    z-index: 5;
+    position: absolute;
+    display: block;
+    bottom: 5px;
+    left: calc(50% - 45px);
+    color: white;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(105, 103, 103));
+    border: none;
+    padding: 0.5% 1%;
+    padding-bottom: 2px;
+}
+
+/* .expand_btn:after{
+    content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+} */
+
+.expand_btn:hover{
+    color: black;
+    background: linear-gradient(rgb(255,255,255), rgb(124, 124, 124));
+    border: 2px outset gray;
+    padding-bottom: 0px;
+}
+
+.repo_link{
+    display: block;
+    padding-bottom: 50px;
+}
+
+.card.expanded{
+    max-height: 10000px;
 }

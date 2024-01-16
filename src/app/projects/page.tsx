@@ -51,13 +51,19 @@ const projectsList = [
     },
     {
         name: "Ron's Database?",
-        description: `Database with queries and drivers and stuff`,
+        description: `Database with queries and drivers and stuff: some extra text here`,
+        repo_link: "#"
+    },
+    {
+        name: "Memory Machine",
+        description: `Web application to keep track of information such as tasks, schedule, and project data.`,
         repo_link: "#"
     }
 ]
 
 
 export default function Projects(props: {}){
+    let cardNum = 0;
     return(
     <div className="body"> 
         <h1 className="title">Projects</h1>
@@ -65,7 +71,7 @@ export default function Projects(props: {}){
 
             {projectsList.map(function(project){
                 let img = project.image ? project.image : "nonexistent";
-                return <Card key={project.name} name={project.name} description={project.description} repo_link={project.repo_link} image={img}></Card>
+                return <Card key={project.name} name={project.name} description={project.description} repo_link={project.repo_link} image={img} cardNum={cardNum++}></Card>
             })}
             
 

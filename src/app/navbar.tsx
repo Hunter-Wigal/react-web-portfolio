@@ -7,10 +7,10 @@ export default function NavBar(props: {className: string}){
     <nav className={props.className}>
         <h1 className={styles.navTitle}></h1>
 
-        <Link className="link" href="/">Home</Link>
-        <Link className="link" href="/projects">Projects</Link>
-        <Link className="link" href="/about">About Me</Link>
-        <Link className="link" href="/resume">Resume</Link>
+        <Link className={styles.link} href="/">Home</Link>
+        <Link className={styles.link} href="/projects">Projects</Link>
+        <Link className={styles.link} href="/about">About Me</Link>
+        <Link className={styles.link} href="/resume">Resume</Link>
         
     </nav>);
 }
