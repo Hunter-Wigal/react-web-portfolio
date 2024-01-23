@@ -1,6 +1,8 @@
 .intro{
   margin-inline-start: 3%;
   margin-inline-end: 10%;
+  flex: 1;
+  min-height: 100%;
 }
 
 .navTitle{
@@ -17,6 +19,7 @@
 
 .link:hover{
   color: white;
-  box-shadow: 5px 5px 5px white;
+  /* Posx Posy Blur Spread */
+  box-shadow: 0px 0px 5px 5px white;
   margin-inline: calc(5px );
 }

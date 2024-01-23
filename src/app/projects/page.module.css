@@ -12,13 +12,16 @@
     max-width: 25%;
     min-width: 280px;
     max-height: 500px;
-    background-color: rgba(76, 80, 81, 0.347);
+    background-color: rgba(126, 131, 133, 0.616);
     margin: 1.5%;
     border-radius: 15px;
     padding: 1%;
     box-shadow: 15px 15px 10px; 
     overflow-y: hidden;
     position: relative;
+
+    
+    transition: max-height 15s linear;
 }
 
 .card h1{
@@ -62,10 +65,12 @@
     bottom: 5px;
     left: calc(50% - 45px);
     color: white;
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(105, 103, 103));
-    border: none;
+    background-image: linear-gradient(rgb(36, 35, 35), rgb(155, 152, 152));
+    border: 4px inset hidden;
     padding: 0.5% 1%;
     padding-bottom: 2px;
+
+    /* TODO     animate this */
 }
 
 /* .expand_btn:after{
@@ -80,8 +85,8 @@
 
 .expand_btn:hover{
     color: black;
-    background: linear-gradient(rgb(255,255,255), rgb(124, 124, 124));
-    border: 2px outset gray;
+    background: linear-gradient(rgb(255,255,255), rgb(183, 182, 182));
+    border: 4px inset black;
     padding-bottom: 0px;
 }
 
