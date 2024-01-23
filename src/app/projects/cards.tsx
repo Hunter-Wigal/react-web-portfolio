@@ -9,7 +9,6 @@ import styles from './page.module.css'
 function expand(cardNum: number){
     let button = document.getElementById("button " +cardNum);
     let card = document.getElementById("button " + cardNum)?.parentElement;
-        
 
     if(!button)
         return
@@ -17,19 +16,18 @@ function expand(cardNum: number){
     if(!card)
         return
 
-    if(button.innerHTML === "Expand"){
-        card.className = card?.className + " " + styles.expanded;
+    var maxHeight = card.scrollHeight + "px";
+    if(button.innerHTML === "Expand"){        
+        card.style.maxHeight = maxHeight;
 
         button.innerHTML = "Hide";
         return;
     }
-    else if(button.innerHTML === "Hide"){
-        card.className = styles.card;
-        button.innerHTML = "Expand"
+    else if(button.innerHTML === "Hide")
+        card.style.maxHeight = "500px";
+        button.innerHTML = "Expand";
     }
 
-    
-}
 
 function ExpandButton(props: {cardNum: number}){
     return(
