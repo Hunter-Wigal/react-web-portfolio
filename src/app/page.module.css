@@ -140,9 +140,7 @@
   .car_container{
     position: relative;
     display: block;
-    width: 100%;
-    height: 70vh;
-    background-color: blue;
+
     margin: auto;
     margin-top: 4%;
   }
