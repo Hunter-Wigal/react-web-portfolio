@@ -35,7 +35,7 @@ export default function Page() {
         <div className={styles.intro}>
           <h1 className="title">General Description Section</h1>
           <p>Hello and welcome to my website. My name is Hunter Wigal and I developed this website as a portfolio
-            to display the various projects I have worked on/contributed to
+            to display the various projects I have worked on or contributed to.
           </p>
           <p>
             This website contains relevant information
@@ -55,18 +55,14 @@ export default function Page() {
 
           <p>This website was built using React with the Next.js framework and deployed using AWS Amplify.
           </p>
-          <p>Possibly pictures</p>
-          <ul>
-            <li>Examples of work</li>
-            <li>What I have experience with?</li>
-          </ul>
+ 
         </div>
         
         <div className={styles.car_container}>
           <div className={styles.carousel} id="carousel">
-            <img className={styles.car_image} alt="project image" id="1"></img>
-            <img className={styles.car_image} alt="project image2" id="2"></img>
-            <img className={styles.car_image} alt="project image3" id="3"></img>
+            <img className={styles.car_image} alt="project image" id="1" src="/projects/the_rockets_display.gif"></img>
+            <img className={styles.car_image} alt="project image2" id="2" src="/projects/memory_machine_display.png"></img>
+            <img className={styles.car_image} alt="project image3" id="3" src="projects/sophies_sweets_display.png"></img>
           </div>
           <button onClick={prev_image} className={styles.prev_btn + " " + styles.scroll_btn}>&#8249;</button>
           <button onClick={next_image} className={styles.next_btn + " " + styles.scroll_btn}>&#8250;</button>

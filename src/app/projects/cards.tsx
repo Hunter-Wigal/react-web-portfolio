@@ -36,16 +36,19 @@ function ExpandButton(props: {cardNum: number}){
 }
 
 
-export default function Card(props: {name: string, description: string, repo_link: string, image: string, cardNum: number}) {
+export default function Card(props: {name: string, description: string, link: string, image: string, cardNum: number}) {
     let styling = props.image === "nonexistent" ? styles.placeholderimg: styles.image;
-    
+    // Either an image or an embedded site
+    let display = props.image === "portfolio" ? <iframe className={styles.frame} src="https://hunterwigal.com" allowFullScreen></iframe>: <img src={props.image} className={styling} alt="A screenshot of the project" />
+    let title_style = props.link === "#" ? styles.empty_link : styles.card_title
     return (
         <div className={styles.card}>
-            <h1>{props.name}</h1>
-            <img src={props.image} className={styling} alt="A screenshot of the project" />
+            <h1 className={title_style}><a href={props.link} target="_blank">{props.name}</a></h1>
+            
+            {display}
             <ExpandButton cardNum={props.cardNum}></ExpandButton>
             <p>{props.description}</p>
-            <a href={props.repo_link} className={styles.repo_link} target="_blank">Link to repository (currently not functioning)</a>
+            <a href={props.link} className={styles.repo_link} target="_blank">Link to repository (currently not functioning)</a>
         </div>
 
     )
