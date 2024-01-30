@@ -1,6 +1,8 @@
 :root{
-  --border-size: 3px;
+  --border-size: -3px;
   }
+
+
 
 /* .main {
   display: flex;
@@ -12,7 +14,6 @@
 }
 
 
-
 body {
   position: relative;
   display: flex;
@@ -20,9 +21,12 @@ body {
   margin: 0;
   padding: 0;
   /* background: border-box linear-gradient(rgb(220, 216, 216), rgb(248, 245, 245)); */
-  background-image: repeating-conic-gradient(rgb(255, 255, 255) 10%, rgba(133, 132, 132, 0.463) 15%, rgb(255, 255, 255) 20%);
+  height: auto;
   min-height: 100vh;
+  max-width: 100vw;
+  /* overflow: hidden; */
 }
+
 
 .navbar {
   padding: 10px 0px;
@@ -35,8 +39,50 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   background-color: rgba(163, 159, 159, 0.299);
   bottom: 0;
+  width: auto;
+}
+
+.container{
+  display: flex;
+  height: auto;
+  padding-inline: 5%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+  min-height: 100vh;
+}
+
+.background{
+  display: block;
+  position: fixed;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -100%;
+  top: -100%;
+  width: 300%;
+  height: 300%;
+  background-image: repeating-conic-gradient(rgb(255, 255, 255) 10%, rgba(133, 132, 132, 0.463) 15%, rgb(255, 255, 255) 20%);
+  animation: rotation 20s infinite linear;
+  border-radius: 50%;
+}
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(359deg);
+  }
 }

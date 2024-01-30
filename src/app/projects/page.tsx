@@ -65,10 +65,9 @@ const projectsList = [
 export default function Projects(props: {}){
     let cardNum = 0;
     return(
-    <div className="body"> 
+    <div className="container"> 
         <h1 className="title">Projects</h1>
-        <div className={styles.container}>
-
+        <div className={styles.row}>
             {projectsList.map(function(project){
                 let img = project.image ? project.image : "nonexistent";
                 return <Card key={project.name} name={project.name} description={project.description} repo_link={project.repo_link} image={img} cardNum={cardNum++}></Card>

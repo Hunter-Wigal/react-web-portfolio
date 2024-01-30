@@ -5,7 +5,7 @@ import styles from './page.module.css'
 export default function ResumePage(props: {}) {
 
     // Put images in public folder
-    return (<div>
+    return (<div className="body">
         <h1 className="title">Resume</h1>
 
         <img className={styles.resume} src={"/resume.png"}
