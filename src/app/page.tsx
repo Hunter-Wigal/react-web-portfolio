@@ -33,7 +33,7 @@ export default function Page() {
     <div className={styles.container}>
       <div className={styles.row}>
         <div className={styles.intro}>
-          <h1 className="title">General Description Section</h1>
+          <h1 className="title">Overview</h1>
           <p>Hello and welcome to my website. My name is Hunter Wigal and I developed this website as a portfolio
             to display the various projects I have worked on or contributed to.
           </p>
