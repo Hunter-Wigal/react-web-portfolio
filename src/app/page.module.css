@@ -14,7 +14,7 @@
 .intro {
   margin-inline-start: 3%;
   margin-inline-end: 10%;
-  flex: 1;
+  flex: 1 0 100%;
   min-height: 100%;
   font-size: 18px;
 }
@@ -132,7 +132,7 @@
   border-radius:  0 2rem 2rem 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .row{
     flex-direction: column;
     justify-content: center;
@@ -140,8 +140,31 @@
   .car_container{
     position: relative;
     display: block;
-
+    width: 90%;
+    height: auto;
     margin: auto;
     margin-top: 4%;
   }
+
+  .car_image{
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+
+  .container{
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+  }
+
+  .intro {
+    margin-inline-start: 3%;
+    margin-inline-end: 10%;
+    flex: 1 0 100%;
+    min-height: 100%;
+    font-size: 10px;
+  }
+
+
 }
