@@ -107,7 +107,6 @@
   border: none;
   cursor: pointer;
   color: white;
-  
 }
 
 .scroll_btn:hover{
@@ -122,6 +121,14 @@
 .prev_btn {
   left: 0;
   border-radius:  0 2rem 2rem 0;
+}
+
+.examples > a{
+  color: black;
+}
+
+.examples > a:hover{
+  color: rgb(35, 5, 231);
 }
 
 
@@ -162,6 +169,12 @@
     flex: 1 0 95%;
     min-height: 100%;
     font-size: 12px;
+  }
+
+  .scroll_btn{
+    font-size: 30px;
+    height: 4rem;
+    width: 2rem;
   }
 
 

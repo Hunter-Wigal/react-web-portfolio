@@ -41,14 +41,14 @@ export default function Card(props: {name: string, description: string, link: st
     // Either an image or an embedded site
     let display = props.image === "portfolio" ? <iframe className={styles.frame} src="https://hunterwigal.com" allowFullScreen></iframe>: <img src={props.image} className={styling} alt="A screenshot of the project" />
     let title_style = props.link === "#" ? styles.empty_link : styles.card_title
+    let title = props.link ==="#" ? props.name : <a href={props.link} target="_blank">{props.name}</a>
     return (
         <div className={styles.card}>
-            <h1 className={title_style}><a href={props.link} target="_blank">{props.name}</a></h1>
+            <h1 className={title_style}>{title}</h1>
             
             {display}
             <ExpandButton cardNum={props.cardNum}></ExpandButton>
-            <p>{props.description}</p>
-            <a href={props.link} className={styles.repo_link} target="_blank">Link to repository (currently not functioning)</a>
+            <p className={styles.description}>{props.description}</p>
         </div>
 
     )

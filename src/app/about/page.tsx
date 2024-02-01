@@ -18,13 +18,20 @@ export default function About(props: {}) {
                         <h3>Phone:</h3> 304-210-3566
                     </div>
                 </div>
+                
             </div>
             <div className={styles.row}>
                 <p className={styles.info}>Hi, I'm Hunter. I'm currently a student at WVU, graduating in May of 2024 with a Bachelor of Science in Computer Science. After graduating, I plan to pursue
                     work in the field of software engineering / development. I'm very passionate about the field of Computer Science
                     and would eventually like to have experience in most aspects. I currently have worked with web development, graphic design
-                    with OpenGL, operating systems, GUI's in python, and a little with ROS2 and databases.
+                    with OpenGL, operating systems, and GUI's in python. An honorable mention includes work on a PyQt GUI that communicates
+                    with a rover via ROS.
+
+                    {/* Over the past couple years I've worked on multiple web applications, most of which are displayed in the projects
+                    section. From those applications I've learned how to use different frameworks such as Angular, Bootstrap, and some React.
+                    I've also learned how to write in Javscript/Typescript and CSS while working on these projects. */}
                 </p>
+
             </div>
         </div>
 
