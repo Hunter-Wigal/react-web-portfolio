@@ -9,7 +9,7 @@ export default function About(props: {}) {
             <h1 className="title">About Me</h1>
             <div className={styles.row}>
                 <div className={styles.col}>
-                    <img className={styles.headshot} alt="Picture of me" src="temp_headshot.png" />
+                    <img className={styles.headshot} alt="Picture of me" src="pro_headshot.jpg" />
                 </div>
                 <div className={styles.col}>
                     <h2>Contact Info</h2>
