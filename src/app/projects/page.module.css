@@ -17,15 +17,25 @@
 
 .card_title{
     text-align: center;
+    font-family: "Quitars";
+    font-size: 50px;
 }
 
 .card_title > a{
     color: black;
 }
 
-.empty_link{
-    text-align: center
+.card_title a:hover{
+    color: aliceblue;
 }
+
+.empty_link{
+    text-align: center;
+    font-family: "Quitars";
+    font-size: 50px;
+}
+
+
 
 .empty_link a{
     text-decoration: none;

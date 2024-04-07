@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image'
 import styles from './page.module.css'
 
 function next_image() {
@@ -32,7 +31,7 @@ export default function Page() {
   return (
     <div className={styles.container}>
       <div className={styles.row}>
-        <div className={styles.intro}>
+        <div className={styles.intro + " test"}>
           <h1 className="title">Overview</h1>
           <p>Hello and welcome to my website. My name is Hunter Wigal and I developed this project as a portfolio
             to display the various projects I have worked on or contributed to. I hope that it can provide a good representation
@@ -42,7 +41,7 @@ export default function Page() {
             This website contains relevant information
             such as:
           </p>
-          <ul>
+          <ul className="test2">
             <li>Projects I have worked on</li>
             <li>Skills / Experience</li>
             <li>Contact information</li>
