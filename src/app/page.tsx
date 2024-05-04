@@ -33,7 +33,7 @@ export default function Page() {
       <div className={styles.row}>
         <div className={styles.intro + " test"}>
           <h1 className="title">Overview</h1>
-          <p>Hello and welcome to my website. My name is Hunter Wigal and I developed this project as a portfolio
+          <p>Hello and welcome to my website. My name is Hunter Wigal and I developed this website as a portfolio
             to display the various projects I have worked on or contributed to. I hope that it can provide a good representation
             of my skills and I appreciate the time you took to view it.
           </p>

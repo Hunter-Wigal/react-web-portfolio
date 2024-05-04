@@ -59,6 +59,18 @@ const projectsList = [
         image: "portfolio"
     },
     {
+        name: "Django Marketplace Application",
+        description: `This project was created to fulfill a semester long class assignment for a database class. The concept behind the project 
+        was to create an application that utilized a database in some way. As per the class requirements, we were assigned a team and the team
+        decided on creating an application similar to Steam, where users could buy or rent digital games. The application was created using
+        Django for both the frontend and backend and a MySQL database for storing information. The frontend is contained within one Django app,
+        while the backend is split across multiple Django apps. The apps follow an api style where actions are performed by making a request to
+        a backend url, which handles connecting to the database and returning a response. The application includes basic features such as registering
+        an account and logging in, 'purchasing' games and viewing your inventory, and adding games to the database with a 'publisher' account.`,
+        link: "https://github.com/Hunter-Wigal/CS440-Team-Delta",
+        image: "/projects/game_marketplace.png"
+    },
+    {
         name: "PyOpenGL Application",
         description: `This OpenGL application was created for an assignment in a graphics class. The application is written
         in python and utilizes libraries such as pyopengl, pygame, and pyrr. Pygame serves as the interface and display, allowing
@@ -69,7 +81,8 @@ const projectsList = [
         vegetation, a street, and a character that waves.`,
         link: "https://github.com/Hunter-Wigal/PyOpenGL-Assignment-Demo",
         image: "/projects/pyopengl_display.png"
-    }
+    },
+
 
 ]
 
