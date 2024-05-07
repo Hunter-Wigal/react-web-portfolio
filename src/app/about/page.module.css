@@ -18,6 +18,7 @@
     height: auto;
     font-size: 20px;
     margin: 7% auto;
+    letter-spacing: 2px;
 }
 
 .row {
@@ -41,6 +42,7 @@
 .contact_info{
     display: block;
     font-size: 20px;
+    letter-spacing: 2px;
 }
 
 .contact_info > h3{
@@ -74,6 +76,7 @@
 
     .info {
         width: 90%;
+        text-align: center;
     }
     .row{
         flex-direction: column;
