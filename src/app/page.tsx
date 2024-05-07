@@ -31,7 +31,7 @@ export default function Page() {
   return (
     <div className={styles.container}>
       <div className={styles.row}>
-        <div className={styles.intro + " test"}>
+        <div className={styles.intro}>
           <h1 className="title">Overview</h1>
           <p>Hello and welcome to my website. My name is Hunter Wigal and I developed this website as a portfolio
             to display the various projects I have worked on or contributed to. I hope that it can provide a good representation
@@ -41,7 +41,7 @@ export default function Page() {
             This website contains relevant information
             such as:
           </p>
-          <ul className="test2">
+          <ul className="list">
             <li>Projects I have worked on</li>
             <li>Skills / Experience</li>
             <li>Contact information</li>
