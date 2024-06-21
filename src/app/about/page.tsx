@@ -16,6 +16,7 @@ export default function About(props: {}) {
                     <div className={styles.contact_info}>
                         <h3>Email:</h3> hgwigal@gmail.com
                         <h3>Phone:</h3> 304-210-3566
+                        <h3>Github:</h3> <a href="https://github.com/Hunter-Wigal" target="_blank">https://github.com/Hunter-Wigal</a>
                     </div>
                 </div>
 
