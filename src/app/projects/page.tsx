@@ -27,8 +27,25 @@ const projectsList = [
         image: "projects/the_rockets_display.gif"
     },
     {
+        name: "Team Mountaineers GUI",
+        description: `The picture above is a screenshot of one tab in a GUI that was designed to be used when operating the Team 
+        Mountaineers rover. Team Mountaineers is the group of students at WVU that participated in the University Rover
+        Challenge (URC), which is a challenge to design and operate a rover that can survive Mars-like conditions. I contributed to this
+        project in my senior year at WVU as my capstone project by modifying the GUI used in the previous year 
+        (https://github.com/team-mountaineers-urc-2023/wanderer_gui) and updating it to work 
+        with the rover participating in 2024. The GUI was written in Python and uses the PyQt libary to handle displaying the different
+        components. Some of the biggest contributions I made to this project include rewriting code meant for use with ROS to work with
+        ROS2, writing documentation for future members to better understand the code, and adding quality of life improvements to the GUI's 
+        functionality such as recording rover data to files. During the scope of this project, I worked in a team that handled all of the 
+        programming aspects of the rover. This team met twice a week to discuss requirements and progress made since the last meeting in an 
+        agile like environment.
+        `,
+        link: "#",
+        image: "projects/heimdall_gui_science.png"
+    },
+    {
         name: "Memory Machine",
-        description: `The Web application I call "Memory Machine" is a project I created to keep track of various information,
+        description: `Note: Under maintenance. The Web application I call "Memory Machine" is a project I created to keep track of various information,
         such as assignments/tasks, a schedule, and project information. I also used it to learn various concepts related to web development
         and for testing various HTML related code. The web application was created using the Angular framework and uses Bootstrap
         for most of the styling. It is deployed on Google Firebase and utilizes Firebase features such as Authentication and the 
