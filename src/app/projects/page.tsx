@@ -72,7 +72,7 @@ const projectsList = [
         more development tools, which is why I created it using React instead of Angular. It utilizes Next.JS and is deployed using 
         AWS Amplify, using AWS Route 53 for the custom domain management. All of the styling was done using CSS with no external
         styling frameworks.`,
-        link: "#",
+        link: "https://github.com/Hunter-Wigal/web-portfolio",
         image: "portfolio"
     },
     {
