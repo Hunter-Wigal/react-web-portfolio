@@ -1,6 +1,7 @@
 'use client';
 
 import styles from './page.module.css'
+import { Project } from './project';
 
 // export default function Cards() {
 //     return
@@ -36,19 +37,23 @@ function ExpandButton(props: {cardNum: number}){
 }
 
 
-export default function Card(props: {name: string, description: string, link: string, image: string, cardNum: number}) {
-    let styling = props.image === "nonexistent" ? styles.placeholderimg: styles.image;
+export default function Card(props: {key: string, project: Project, cardNum: number}) {
+    //TODO rewrite this or make embedded sites for other hosted sites
     // Either an image or an embedded site
-    let display = props.image === "portfolio" ? <iframe className={styles.frame} src="https://hunterwigal.com" allowFullScreen></iframe>: <img src={props.image} className={styling} alt="A screenshot of the project" />
-    let title_style = props.link === "#" ? styles.empty_link : styles.card_title
-    let title = props.link ==="#" ? props.name : <a href={props.link} target="_blank">{props.name}</a>
+    let display = props.project.image === "portfolio" ? 
+        <iframe className={styles.frame} src="https://hunterwigal.com" allowFullScreen></iframe>
+        : <img src={props.project.image} className={styles.image} alt="A screenshot of the project" />
+
+    let title_style = props.project.link ? styles.empty_link : styles.card_title
+    let title = props.project.link ? props.project.name : <a href={props.project.link} target="_blank">{props.project.name}</a>
+
     return (
         <div className={styles.card}>
             <h1 className={title_style}>{title}</h1>
             
             {display}
             <ExpandButton cardNum={props.cardNum}></ExpandButton>
-            <p className={styles.description}>{props.description}</p>
+            <p className={styles.description}>{props.project.description}</p>
         </div>
 
     )

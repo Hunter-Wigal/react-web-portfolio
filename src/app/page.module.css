@@ -44,6 +44,7 @@
   box-shadow: 0px 0px 5px 5px var(--accent-color);
   margin-inline: calc(5px);
   border-radius: 7px;
+  transition: all 0.3s ease-in;
 }
 
 .row{
