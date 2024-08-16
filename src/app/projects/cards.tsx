@@ -44,14 +44,17 @@ export default function Card(props: {key: string, project: Project, cardNum: num
         <iframe className={styles.frame} src="https://hunterwigal.com" allowFullScreen></iframe>
         : <img src={props.project.image} className={styles.image} alt="A screenshot of the project" />
 
-    let title_style = props.project.link ? styles.empty_link : styles.card_title
-    let title = props.project.link ? props.project.name : <a href={props.project.link} target="_blank">{props.project.name}</a>
+    let title_style = props.project.link ? styles.card_title : styles.empty_link
+    let title = props.project.link ? <a href={props.project.link} target="_blank">{props.project.name}</a> : props.project.name
+    let github = props.project.github ? <p className={styles.github}>Github: <a href={props.project.github} target="_blank">{props.project.github}</a></p> : null;
 
+    console.log(props.project.link);
     return (
         <div className={styles.card}>
             <h1 className={title_style}>{title}</h1>
             
             {display}
+            {github}
             <ExpandButton cardNum={props.cardNum}></ExpandButton>
             <p className={styles.description}>{props.project.description}</p>
         </div>
