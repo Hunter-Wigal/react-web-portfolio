@@ -12,7 +12,7 @@ export default function ResumePage(props: {}) {
             alt="This is an image of my resume" />
         <div className={styles.download}>
             <p>You can download my resume here:</p>
-            <a id="a" href="/Hunter-Wigal Resume.pdf" download>Hunter-Wigal Resume.pdf</a>
+            <a id="a" href="/Hunter-Wigal-Resume.pdf" download>Hunter-Wigal-Resume.pdf</a>
         </div>
     </div>);
 }
