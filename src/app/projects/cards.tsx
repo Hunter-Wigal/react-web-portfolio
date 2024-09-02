@@ -48,7 +48,6 @@ export default function Card(props: {key: string, project: Project, cardNum: num
     let title = props.project.link ? <a href={props.project.link} target="_blank">{props.project.name}</a> : props.project.name
     let github = props.project.github ? <p className={styles.github}>Github: <a href={props.project.github} target="_blank">{props.project.github}</a></p> : null;
 
-    console.log(props.project.link);
     return (
         <div className={styles.card}>
             <h1 className={title_style}>{title}</h1>
