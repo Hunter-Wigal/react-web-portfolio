@@ -3,7 +3,14 @@
         "name": "Sophie's Sweets",
         "description": "Sophie's Sweets is a business website made for displaying baked goods and for providing customers a way to order. Sophie, a baker local to Parkersburg WV, needed a way to display all of her products in one place and a way to take orders that wasn't through direct messaging. This web application was created just for those purposes. The application is currently deployed through Google Firebase and uses the Google Cloud Firestore for storing order information from customers. It was built using the Angular framework and uses styling from Bootstrap. It also uses Firebase authentication in order to have an admin role that is able to view the currently stored orders.",
         "link": "https://sophiessweetswv.com",
-        "image": "/projects/sophies_sweets_display.png"
+        "image": "/projects/sophies_sweets_display.png",
+        "github": "https://github.com/Hunter-Wigal/Sophies-Sweets"
+    },
+    {
+        "name": "Online Shop Full-Stack Application",
+        "description": "This online shop application was a project I came up with to learn a new framework and become more familiar with one I already knew. The application uses Spring Boot for the backend and React for the frontend. While unfinished, it still contains a lot of functionality relevant to selling products online. It allows users to create accounts and view available products before placing them in their cart and checking out. The shop owner can also manage products and orders on an admin page. Data for users is stored in a Postgres database which is managed by the Spring Boot application. Authentication is handled using json web tokens, which are used to keep the user's state. The code for both the front and backend is available on my github profile at: https://github.com/Hunter-Wigal?tab=repositories",
+        "image": "/projects/online_shop.png",
+        "github" : "https://github.com/Hunter-Wigal/online-shop-front"
     },
     {
         "name": "MPX Based Operating System",
