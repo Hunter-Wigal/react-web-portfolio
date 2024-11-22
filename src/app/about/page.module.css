@@ -58,6 +58,18 @@
     color: rgb(231, 231, 231);
 }
 
+.certifications{
+    width: 60%;
+    margin-inline: auto;
+}
+
+.certifications .col{
+    width: 100%;
+}
+
+.badge{
+    width: auto;
+}
 
 @media (max-width: 1100px) {
     .headshot {

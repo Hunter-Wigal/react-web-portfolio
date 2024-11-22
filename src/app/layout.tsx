@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Hunter Wigal Portfolio',
   description: 'Projects and information about Hunter Wigal',
-  icons: '/favicon.ico'
+  icons: '/icon.ico'
 }
 
 export default function RootLayout({
